@@ -7,7 +7,6 @@ import './login.css';
 function Login({ loginUser }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  // const [loginError, setLoginError] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -16,7 +15,6 @@ function Login({ loginUser }) {
 
   return (
     <div className='login'>
-      {/* {loginError && <div>Login Error. Credentials were invalid</div>} */}
       <h1>Login</h1>
       <form className='add-film-form' onSubmit={handleLogin}>
         <input

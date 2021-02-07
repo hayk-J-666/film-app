@@ -33,10 +33,10 @@ function App({ loadUsers, loadFilms }) {
 
             <Route
               exact
-              path='/about-film'
+              path='/films/:id'
               render={() => <AboutFilm />}
             ></Route>
-            <Route exact path='/' render={() => <Homepage />}></Route>
+            <Route exact path='/' render={() => <Homepage /> }></Route>
             <Route component={NoMatch} />
           </Switch>
         </div>
